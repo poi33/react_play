@@ -1,0 +1,14 @@
+{
+  "name": "react_play",
+  "version": "0.0.1",
+  "description": "Learning react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Persijn",
+  "license": "ISC"
+}
