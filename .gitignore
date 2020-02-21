@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+
+#Ignored the finished build file
+main.js 
+build

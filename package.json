@@ -4,11 +4,30 @@
   "description": "Learning react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "http-server -p 9000",
+    "build": "npm run babel && npx browserify build/build.js -o build/main.js --debug",
+    "production": "npm run babel && npx browserify build/build.js -o build/main.js",
+    "babel": "npx babel build.jsx ./js --out-dir build"
   },
   "keywords": [
     "demo"
   ],
   "author": "Persijn",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "http-server": "^0.12.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "browserify": "^16.5.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
